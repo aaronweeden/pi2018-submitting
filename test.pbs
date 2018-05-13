@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -l nodes=2:ppn=32:xe
 #PBS -l walltime=00:05:00
+#PBS -N test
 ##PBS -l advres=baqk
 
 cd $PBS_O_WORKDIR
 
-aprun ./test.exe
 aprun -n 4 ./test.exe
