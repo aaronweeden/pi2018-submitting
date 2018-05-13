@@ -6,4 +6,4 @@
 
 cd $PBS_O_WORKDIR
 
-aprun -n 4 ./test.exe
+aprun -n 4 ./test.exe|sort
